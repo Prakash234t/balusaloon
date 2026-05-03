@@ -25,7 +25,13 @@ SECRET_KEY = 'django-insecure-g3!=e(bi4#(3$fcc2=tpi+z-cemuq2xqof9phw#%91+nlo%f+4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# salon_project/settings.py
+
+ALLOWED_HOSTS = [
+    'balusaloon-production.up.railway.app', 
+    '127.0.0.1', 
+    'localhost'
+]
 
 
 # Application definition
