@@ -29,7 +29,7 @@ DEBUG = True
 # salon_project/settings.py
 
 ALLOWED_HOSTS = [
-    'balusaloon-production.up.railway.app', 
+    'balusaloon.up.railway.app', 
     '127.0.0.1', 
     'localhost'
 ]
