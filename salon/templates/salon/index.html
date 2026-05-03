@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balu Salon - Modern UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Special Offer Banner -->
+  <div class="bg-yellow-400 text-black text-center p-4 text-2xl font-bold tracking-wide shadow-md">
+    🎉 Special Offer: Hair Cut @ ₹99 | Facial @ ₹299 🎉
+  </div>
+  <!-- Navbar -->
+  <nav class="bg-black text-white p-6 flex justify-between items-center">
+    <h1 class="text-3xl font-bold tracking-wide">Balu Salon</h1>
+    <div class="space-x-6 text-lg font-medium">
+      <a href="#" class="hover:text-yellow-400 transition">Home</a>
+      <a href="#services" class="hover:text-yellow-400 transition">Services</a>
+      <a href="#gallery" class="hover:text-yellow-400 transition">Gallery</a>
+      <a href="#contact" class="hover:text-yellow-400 transition">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="h-[80vh] bg-cover bg-center flex items-center justify-center text-white relative" style="background-image:url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1920&q=80');">
+    <!-- Dark overlay for better text readability -->
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="bg-black/60 p-10 rounded-xl text-center relative z-10">
+      <h2 class="text-4xl font-bold mb-4">Style Your Hair</h2>
+      <p class="mb-4">Professional Haircuts & Grooming</p>
+      <a href="#booking" class="bg-yellow-400 text-black px-6 py-2 rounded-xl inline-block hover:bg-yellow-500 transition">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Offers Banner -->
+  <div class="bg-yellow-400 text-black text-center p-3 font-semibold">
+    🎉 Special Offer: Hair Cut @ ₹99 | Facial @ ₹299 🎉
+  </div>
+
+  <!-- Services -->
+  <section id="services" class="p-10 text-center">
+    <h2 class="text-3xl font-bold mb-6">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70" class="rounded-xl mb-4">
+        <h3 class="text-xl font-semibold">Hair Cut</h3>
+        <div class="mt-4">
+          <span class="bg-yellow-400 text-black px-4 py-1 rounded-full font-bold shadow-sm text-lg">₹150 - ₹300</span>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881" class="rounded-xl mb-4">
+        <h3 class="text-xl font-semibold">Facial</h3>
+        <div class="mt-4">
+          <span class="bg-yellow-400 text-black px-4 py-1 rounded-full font-bold shadow-sm text-lg">₹300 - ₹1500</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="p-10 bg-gray-200">
+    <h2 class="text-3xl font-bold text-center mb-6">Gallery</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <img src="{% static 'salon/images/textured_crop_fade_1777775593672.png' %}" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition duration-300">
+      <img src="{% static 'salon/images/messy_quiff_fade_1777775613910.png' %}" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition duration-300">
+      <img src="{% static 'salon/images/slick_back_fade_1777775706579.png' %}" class="rounded-xl w-full h-auto shadow-lg hover:scale-105 transition duration-300">
+    </div>
+  </section>
+
+  <!-- Contact + Map -->
+  <section id="contact" class="p-10 text-center">
+    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+    <p class="mb-4">📍 Karur | 📞 9698686239</p>
+    <div class="bg-white p-6 rounded-xl shadow">
+      <p class="mb-2">📍 View our location on Google Maps</p>
+      <div class="flex flex-wrap gap-3 justify-center">
+        <a href="https://www.google.com/maps?q=10.9615435,78.0749106" target="_blank" class="bg-green-600 text-white px-6 py-2 rounded-xl hover:bg-green-700">
+          Open in Maps
+        </a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=10.9615435,78.0749106" target="_blank" class="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700">
+          Get Directions
+        </a>
+        <a href="tel:9698686239" class="bg-yellow-500 text-black px-6 py-2 rounded-xl hover:bg-yellow-600">
+          📞 Call Now
+        </a>
+      </div>
+    </div>
+    <div class="mt-4">
+      <a href="https://share.google/TDfFX4IR1VsfDJEeF" target="_blank" class="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700">
+        ⭐ View on Google Business
+      </a>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="p-10 bg-white text-center">
+    <h2 class="text-3xl font-bold mb-6">Customer Reviews</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-gray-100 p-6 rounded-xl shadow">
+        <p class="text-yellow-500 text-lg">★★★★★</p>
+        <p class="mt-2">"Very good haircut and friendly service!"</p>
+        <p class="mt-2 font-semibold">- Ravi</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-xl shadow">
+        <p class="text-yellow-500 text-lg">★★★★☆</p>
+        <p class="mt-2">"Nice facial service, clean and professional."</p>
+        <p class="mt-2 font-semibold">- Kumar</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-xl shadow">
+        <p class="text-yellow-500 text-lg">★★★★★</p>
+        <p class="mt-2">"Best salon in Karur, highly recommended!"</p>
+        <p class="mt-2 font-semibold">- Suresh</p>
+      </div>
+    </div>
+
+    <div class="mt-6">
+      <a href="https://share.google/TDfFX4IR1VsfDJEeF" target="_blank" class="bg-yellow-500 text-black px-6 py-2 rounded-xl hover:bg-yellow-600">
+        ⭐ Leave a Review
+      </a>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="booking" class="p-10 bg-gray-200 text-center">
+    <h2 class="text-3xl font-bold mb-6">Book Appointment</h2>
+    <form id="bookingForm" class="max-w-md mx-auto bg-white p-6 rounded-xl shadow space-y-4">
+      {% csrf_token %}
+      <input type="text" id="name" placeholder="Your Name" class="w-full p-2 border rounded" required>
+      <input type="tel" id="phone" placeholder="Phone Number" class="w-full p-2 border rounded" required>
+      <select id="service" class="w-full p-2 border rounded">
+        <option>Hair Cut</option>
+        <option>Facial</option>
+      </select>
+      <button type="submit" class="bg-black text-white px-6 py-2 rounded">Book via WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- Contact Us -->
+  <section id="contact" class="p-10 bg-white text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+    <div class="space-y-4 text-xl font-medium text-gray-800">
+      <p>📍 Karur | 📞 9698686239</p>
+      <p>📍 <a href="https://maps.google.com/?q=Karur" target="_blank" class="text-blue-600 hover:underline">View our location on Google Maps</a></p>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      let name = document.getElementById("name").value;
+      let phone = document.getElementById("phone").value;
+      let service = document.getElementById("service").value;
+      let csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+
+      // Send to backend (Django)
+      fetch("/book", {
+        method: "POST",
+        headers: { 
+            "Content-Type": "application/json",
+            "X-CSRFToken": csrfToken
+        },
+        body: JSON.stringify({ name, phone, service })
+      })
+      .then(res => res.json())
+      .then(data => console.log("Saved:", data))
+      .catch(err => {
+        console.log("Backend not reachable (this is OK in preview)", err);
+      });
+
+      // WhatsApp message
+      let message = `Hi, I am ${name}. I want to book ${service}. My number is ${phone}`;
+      let url = `https://wa.me/919698686239?text=${encodeURIComponent(message)}`;
+
+      window.open(url, "_blank");
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center p-4">
+    <p>© 2026 Balu Salon</p>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919698686239" target="_blank" class="fixed bottom-5 right-5 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg hover:bg-green-600">
+    💬 Chat
+  </a>
+
+</body>
+</html>
